@@ -1,0 +1,20 @@
+<ion-view view-title="Login" align-title="left">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button class="button-clear icon ion-ios7-arrow-back">	
+		</ion-nav-back-button>
+	</ion-nav-bar>
+    <ion-content>
+      <div class="list">
+			<ion-md-input placeholder="Username" hightlight-color="dark" type="text" ng-model="user.username"></ion-md-input>
+			<ion-md-input placeholder="Password" hightlight-color="energized" type="password" ng-model="user.password"></ion-md-input>
+      </div>
+	  <div class="padding">
+		<button class="button button-block button-positive" ng-click="signIn(user)">
+		  Sign-In
+		</button>
+		<p class="text-center">
+		  <a href="#/forgot-password">Forgot password</a>
+		</p>
+	  </div>
+    </ion-content>
+</ion-view>
